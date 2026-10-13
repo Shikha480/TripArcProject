@@ -1,0 +1,27 @@
+{
+  "name": "triparc-mobile-automation",
+  "version": "1.0.0",
+  "description": "TripArc practical assessment: Appium + WebdriverIO + TypeScript + Cucumber tests for the Sauce Labs My Demo App",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "wdio run ./wdio.conf.ts",
+    "test:smoke": "wdio run ./wdio.conf.ts --cucumberOpts.tags=@smoke",
+    "test:edge": "wdio run ./wdio.conf.ts --cucumberOpts.tags=@edge",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@wdio/appium-service": "^9.0.0",
+    "@wdio/cli": "^9.0.0",
+    "@wdio/cucumber-framework": "^9.0.0",
+    "@wdio/globals": "^9.0.0",
+    "@wdio/local-runner": "^9.0.0",
+    "@wdio/spec-reporter": "^9.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
